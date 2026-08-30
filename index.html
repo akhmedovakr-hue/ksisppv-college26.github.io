@@ -1,8 +1,93 @@
 <!DOCTYPE html>
-<html>
-<head><title>Сдача отчетов</title></head>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сдача практических работ</title>
+    <style>
+        /* Базовые сбросы и шрифт */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Контейнер карточки */
+        .container {
+            width: 100%;
+            max-width: 680px;
+            background: #ffffff;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        /* Шапка страницы */
+        .header {
+            padding: 24px 32px;
+            border-bottom: 1px solid #e9ecef;
+            background-color: #ffffff;
+        }
+        .header h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 6px;
+        }
+        .header p {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        /* Область фрейма формы */
+        .form-wrapper {
+            width: 100%;
+            padding: 10px 0;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            display: block;
+        }
+
+        /* Подвал */
+        .footer {
+            padding: 16px;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #9ca3af;
+            border-top: 1px solid #f3f4f6;
+        }
+    </style>
+</head>
 <body>
-<h1>Страница для сдачи отчетов</h1>
-<p>Перейдите на <a href="report.html">страницу сдачи</a></p>
+
+<div class="container">
+    <div class="header">
+        <h1>Сдача лабораторных и практических работ</h1>
+        <p>Заполните форму и прикрепите файл отчета. Для доступа потребуется пароль группы.</p>
+    </div>
+
+    <div class="form-wrapper">
+        <script src="https://forms.yandex.ru/_static/embed.js"></script><iframe src="https://forms.yandex.ru/u/69d6a0d049af470511b92238?iframe=1" frameborder="0" name="ya-form-69d6a0d049af470511b92238" width="650"></iframe>
+    </div>
+
+    <div class="footer">
+        © Учебный портал приема отчетов
+    </div>
+</div>
+
 </body>
 </html>
